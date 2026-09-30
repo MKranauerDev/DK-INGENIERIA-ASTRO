@@ -1,0 +1,13 @@
+---
+const services = [
+ {number:'01',title:'Instalación y puesta en marcha',desc:'Montaje y calibración de equipos nuevos o usados, asegurando un arranque seguro y eficiente.',img:'vending-machine_1020409.png'},
+ {number:'02',title:'Instalaciones eléctricas industriales',desc:'Diseño, ejecución y mantenimiento de sistemas eléctricos para entornos industriales.',img:'easy-installation_4796330.png'},
+ {number:'03',title:'Equipos hidráulicos y neumáticos',desc:'Instalación, reparación y mantenimiento de sistemas hidráulicos y neumáticos.',img:'press-machine_2180539.png'},
+ {number:'04',title:'Instalación y reparación de hornos',desc:'Montaje, ajuste y reparación de hornos para tratamientos térmicos, eléctricos y a gas.',img:'furnace_1593986.png'},
+ {number:'05',title:'Asesoramiento en tratamientos térmicos',desc:'Optimización de procesos térmicos para mejorar la calidad y la eficiencia.',img:'fireplace_11252761.png'},
+ {number:'06',title:'Reparación de equipos industriales',desc:'Soluciones rápidas y efectivas para devolver la operatividad a tus equipos.',img:'repair_4465620.png'},
+ {number:'07',title:'Instalación y reparación de CNC',desc:'Montaje, calibración y reparación de maquinaria CNC para mantener su precisión.',img:'robot-arm_876971.png'},
+ {number:'08',title:'Retrofit de equipos CNC',desc:'Actualización tecnológica de máquinas CNC para prolongar su vida útil y productividad.',img:'engineering_2630857.png'}
+];
+---
+<section class="services section-pad" id="servicios"><div class="container"><div class="services-heading"><div><p class="section-kicker">02 / QUÉ HACEMOS</p><h2>Servicios para una industria <span>en movimiento.</span></h2></div><p>Soluciones integrales para mantener tus equipos operativos, optimizar procesos y potenciar tu producción.</p></div><div class="services-grid">{services.map(service=><article class="service-card"><div class="service-top"><span>{service.number} / 08</span><span class="service-arrow" aria-hidden="true">↗</span></div><div class="service-icon"><img src={`/img/${service.img}`} alt="" loading="lazy" width="82" height="82"/></div><h3>{service.title}</h3><p>{service.desc}</p><a href={`#contacto`} aria-label={`Consultar por ${service.title}`} class="service-link">CONSULTAR SERVICIO <span aria-hidden="true">→</span></a></article>)}</div></div></section>

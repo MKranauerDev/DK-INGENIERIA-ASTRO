@@ -1,0 +1,5 @@
+---
+import '../styles/global.css';
+const { title = 'DK Ingeniería | Soluciones industriales', description = 'Mantenimiento industrial, CNC, instalaciones eléctricas y asesoramiento técnico. Casi 30 años de trayectoria.' } = Astro.props;
+---
+<!doctype html><html lang="es-AR"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="theme-color" content="#12171d"/><meta name="description" content={description}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/><link rel="icon" href="/img/DK%20Ingenieria.png"/><title>{title}</title></head><body><slot /></body></html>
